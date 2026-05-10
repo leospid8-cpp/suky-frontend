@@ -2,7 +2,7 @@
   "name": "Suky — per Mascia",
   "short_name": "Suky",
   "description": "Il tuo assistente verde, con tutto l'amore del mondo",
-  "start_url": "/",
+  "start_url": "/suky-frontend/",
   "display": "standalone",
   "background_color": "#f0f7f0",
   "theme_color": "#4a7c59",
