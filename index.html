@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#2d5a3d" />
+  <link rel="manifest" href="manifest.json" />
+  <title>Suky — per Mascia 🐻</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+  <div class="header-avatar" id="header-bear">
+    <!-- SVG orsetto verde -->
+    <svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- orecchie -->
+      <circle cx="9"  cy="10" r="7" fill="#4a7c59"/>
+      <circle cx="37" cy="10" r="7" fill="#4a7c59"/>
+      <circle cx="9"  cy="10" r="4" fill="#6a9e77"/>
+      <circle cx="37" cy="10" r="4" fill="#6a9e77"/>
+      <!-- testa -->
+      <circle cx="23" cy="24" r="17" fill="#4a7c59"/>
+      <!-- muso -->
+      <ellipse cx="23" cy="29" rx="8" ry="5.5" fill="#6a9e77"/>
+      <!-- occhi -->
+      <circle cx="17" cy="21" r="2.5" fill="#1e3a2a"/>
+      <circle cx="29" cy="21" r="2.5" fill="#1e3a2a"/>
+      <circle cx="18" cy="20" r="0.9" fill="white"/>
+      <circle cx="30" cy="20" r="0.9" fill="white"/>
+      <!-- naso -->
+      <ellipse cx="23" cy="27" rx="2.2" ry="1.5" fill="#1e3a2a"/>
+      <!-- bocca sorridente -->
+      <path d="M20 30 Q23 33 26 30" stroke="#1e3a2a" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div class="header-info">
+    <h1>Suky 🌿 <span class="flower-deco">🌸</span></h1>
+    <p><span class="status-dot"></span>Qui per Mascia, con tutto l'amore</p>
+  </div>
+</header>
+
+<!-- ===== Chat ===== -->
+<div id="chat">
+  <div class="welcome-chip">🌸 Festa della Mamma 🌸</div>
+</div>
+
+<!-- ===== Input ===== -->
+<div id="input-bar">
+  <div id="input-row">
+    <textarea
+      id="text-input"
+      rows="1"
+      placeholder="Scrivi a Suky…"
+      aria-label="Messaggio"
+    ></textarea>
+    <button class="btn-icon" id="btn-mic" title="Tieni premuto per parlare" aria-label="Microfono">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 1a4 4 0 0 1 4 4v6a4 4 0 0 1-8 0V5a4 4 0 0 1 4-4zm6.5 9a.5.5 0 0 1 1 0A7.5 7.5 0 0 1 12 17.5V21h2a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1h2v-3.5A7.5 7.5 0 0 1 5.5 10a.5.5 0 0 1 1 0 6.5 6.5 0 0 0 13 0z"/>
+      </svg>
+    </button>
+    <button class="btn-icon" id="btn-send" title="Invia" aria-label="Invia">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<audio id="audio-player"></audio>
+
+<script src="app.js"></script>
+</body>
+</html>

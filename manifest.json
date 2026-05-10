@@ -1,0 +1,22 @@
+{
+  "name": "Suky — per Mascia",
+  "short_name": "Suky",
+  "description": "Il tuo assistente verde, con tutto l'amore del mondo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f7f0",
+  "theme_color": "#4a7c59",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
